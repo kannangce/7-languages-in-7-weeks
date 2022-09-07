@@ -40,4 +40,22 @@ call_proc_with_arg lam // This is not working. https://stackoverflow.com/questio
 - Symbols in ruby are similar to Clojure keyword.
 - Possible syntax to function calls are similar to Lisp in the sense, `name arg1,arg2`.
 - Methods changing the states are similar to Clojure, ie., with a `!`. ie., `map` in list does normal mapping, whereas `map!` 
-  changes the state. 
+  changes the state.
+
+## Syntactical observations:
+- @ for attributes.
+- @@ for static attributes.
+- attr - defines variable with getter
+- attr_accessor - defines variable with getter, setter
+- To inherit `class classname < ParentClass`
+  - To extend module
+    ```
+    class ClassName
+        include Module1
+        include Module2
+    end
+    ```
+
+## Conceptual
+- Modules can be used for multiple inheritance.
+- Modules cannot be instantiated.

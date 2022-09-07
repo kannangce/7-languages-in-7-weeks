@@ -10,3 +10,8 @@ much needed because we don't tend to change values during the course of the prog
   define without a class resides in? There is an object called `Object` which is root object and contains everything.
 
 - homebrew taps has to be written in Ruby.
+
+## Syntactical:
+
+- Function definition seem to match with python.
+- 
