@@ -11,16 +11,22 @@ General notes on Ruby,
 ```
 def call_block(&b)
    puts b.class
-   b.call // We can also do yield here.
+   b.call # We can also do yield here.
+ end
+ 
+ def call_block2()
+   yield
  end
  
  call_block {puts "this is like a lambda"}
  ``` 
 
 - `block_given?` can be used inside a function to know if block has been passed to it.
+
 - `Lambda` is a block stored into a variable for reuse.
 - Procs are same but when you create it like `Proc.new {print "inside proc"}`
 - To summarize, `Proc` is to define `Closures`. `Lambda` is a syntactic sugar for it and `Block` is an anonymous version of it.  
+
 - Related reference can be found [here](https://www.rubyguides.com/2016/02/ruby-procs-and-lambdas/).
 
 ```
@@ -34,6 +40,7 @@ lam = -> (a) { puts "printing the argument #{a}"}
 
 call_proc_with_arg lam // This is not working. https://stackoverflow.com/questions/73601408/unable-to-call-ruby-lambda
 ```
+ - inject and reduce are alias under Enumerable.
 
 ## Parallels to Clojure
 

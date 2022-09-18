@@ -28,5 +28,4 @@ File.open("/Users/kannanr/Desktop/temp.txt", "w") {|f| f.write("hello")}
 - Array can be used as matrix with `transpose`
 - As Stack with `push` and `pop`.
 - As queue with `append` and `shift`.
-- As matrix with supported functions like `transpose`.
 - As set by calling `uniq` and supported functions like `union`.
