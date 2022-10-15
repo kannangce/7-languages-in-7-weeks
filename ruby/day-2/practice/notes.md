@@ -9,13 +9,12 @@ File.open("/Users/kannanr/Desktop/temp.txt", "w") {|f| f.write("hello")}
  f.close()
 ```
 
-> ? How come open works with both with and without block?
+The former takes care of closing the files as well. Can be proven by `lsof /|grep "temp.txt"`.
 
 - Hash to list,
 ```
  {:a => 1, :b=>2}.to_a
 // Returns [[:a, 1], [:b, 2]]
-
 ```
 
 - List to hash,

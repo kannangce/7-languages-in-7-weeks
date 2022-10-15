@@ -1,10 +1,11 @@
 class CustomFile
   def self.open(file)
-    if(block_given?)
+    if block_given?
       puts "Called with a block"
       File.open(file) {yield}
+      File.new
     end
       puts "Called to return File"
-    return  File.open(file)
+      File.open(file)
   end
 end
