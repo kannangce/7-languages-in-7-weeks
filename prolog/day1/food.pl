@@ -1,3 +1,4 @@
+# Data
 food_type(velveeta, cheese).
 food_type(ritz, cracker).
 food_type(spam, meat).
@@ -8,4 +9,6 @@ flavor(sweet, dessert).
 flavor(savory, meat).
 flavor(savory, cheese).
 flavor(sweet, soda).
+
+# Conditions
 food_flavor(X, Y) :- food_type(X, Z), flavor(Y, Z).
